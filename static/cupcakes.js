@@ -5,12 +5,12 @@ const BASE_URL = "http://127.0.0.1:5000/api";
 
 function generateCupcakeHTML(cupcake) {
   return `
-    <div data-cupcake-id=${cupcake.id}>
+    <div data-cupcake-id=${cupcake.id} class="w-25 h-25">
       <li>
         ${cupcake.flavor} / ${cupcake.size} / ${cupcake.rating}
         <button class="delete-button">X</button>
       </li>
-      <img class="Cupcake-img"
+      <img class="Cupcake-img img-thumbnail"
             src="${cupcake.image}"
             alt="(no image provided)">
     </div>
